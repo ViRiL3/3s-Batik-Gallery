@@ -1,200 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="3s Batik Gallery – Authentic handcrafted batik sarees, fabrics and dupattas. Order via WhatsApp.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3s Batik Gallery | Authentic Batik Art</title>
-
-<style>
-body { margin:0; font-family: 'Segoe UI', sans-serif; background:#fafafa; color:#2c2c2c; }
-
-header {
-  background:#2c3e50;
-  color:white;
-  padding:20px;
-  text-align:center;
-}
-
-.hero {
-  background:#f4f1ec;
-  padding:70px 20px;
-  text-align:center;
-}
-
-.hero h2 { font-size:2.4rem; margin-bottom:10px; }
-
-.btn {
-  background:#c0392b;
-  color:white;
-  padding:14px 26px;
-  text-decoration:none;
-  border-radius:6px;
-  display:inline-block;
-  margin-top:20px;
-}
-
-.section {
-  max-width:1100px;
-  margin:auto;
-  padding:50px 20px;
-}
-
-.section h3 {
-  text-align:center;
-  font-size:2rem;
-  margin-bottom:40px;
-}
-
-.gallery {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
-  gap:25px;
-}
-
-.card {
-  background:white;
-  border-radius:10px;
-  overflow:hidden;
-  box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
-.card img {
-  width:100%;
-  height:280px;
-  object-fit:cover;
-}
-
-.card .info {
-  padding:15px;
-}
-
-.price {
-  font-weight:bold;
-  margin:10px 0;
-}
-
-.order-btn {
-  background:#25D366;
-  color:white;
-  padding:10px 18px;
-  text-decoration:none;
-  border-radius:5px;
-  display:inline-block;
-}
-
-.steps {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
-  gap:20px;
-  text-align:center;
-}
-
-.step {
-  background:white;
-  padding:25px;
-  border-radius:8px;
-}
-
-.instagram {
-  text-align:center;
-}
-
-footer {
-  background:#2c3e50;
-  color:white;
-  text-align:center;
-  padding:25px;
-}
-
-.whatsapp-float {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:15px 22px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3S Batik Gallery | Premium Batik Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .category-card:hover { transform: translateY(-5px); transition: 0.3s; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+    </style>
 </head>
+<body class="bg-stone-50 text-gray-800">
 
-<body>
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-red-800">3S BATIK GALLERY</h1>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#categories" class="hover:text-red-600">Categories</a>
+                <a href="#contact" class="hover:text-red-600">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<header>
-  <h1>3s Batik Gallery</h1>
-  <p>Original & Authentic Batik Pieces</p>
-</header>
+    <header class="bg-red-900 text-white py-16 text-center">
+        <h2 class="text-4xl md:text-6xl font-serif mb-4">Exquisite Handmade Batik</h2>
+        <p class="text-lg opacity-90">Kurtis, Palazzos, Bed-sheets & More</p>
+    </header>
 
-<section class="hero">
-  <h2>Handcrafted Batik Art</h2>
-  <p>Timeless batik sarees, fabrics & dupattas crafted with tradition and elegance.</p>
-  <a href="#collection" class="btn">View Collection</a>
-</section>
+    <section id="categories" class="container mx-auto px-6 py-12">
+        <h3 class="text-3xl font-semibold text-center mb-10">Our Collections</h3>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <a href="#kurtis" class="category-card bg-white p-4 rounded shadow text-center">
+                <img src="https://via.placeholder.com/150?text=Batik+Kurtis" alt="Kurtis" class="mx-auto mb-2 rounded">
+                <span class="font-bold">Batik Kurtis</span>
+            </a>
+            <a href="#pants" class="category-card bg-white p-4 rounded shadow text-center">
+                <img src="https://via.placeholder.com/150?text=Batik+Pants" alt="Pants" class="mx-auto mb-2 rounded">
+                <span class="font-bold">Batik Pants</span>
+            </a>
+            <a href="#bedsheets" class="category-card bg-white p-4 rounded shadow text-center">
+                <img src="https://via.placeholder.com/150?text=Bedsheets" alt="Bedsheets" class="mx-auto mb-2 rounded">
+                <span class="font-bold">Batik Bed-Sheets</span>
+            </a>
+            </div>
+    </section>
 
-<section class="section" id="collection">
-<h3>Our Collection</h3>
+    <section id="kurtis" class="container mx-auto px-6 py-12 border-t">
+        <h3 class="text-2xl font-bold mb-8 italic">Batik Kurtis (Long & Short)</h3>
+        <div class="product-grid">
+            
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg border">
+                <img src="https://via.placeholder.com/400x500?text=Kurtis+Design+1" alt="Batik Kurti" class="w-full h-80 object-cover">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg">Pure Cotton Long Kurti</h4>
+                    <p class="text-gray-600 text-sm mb-2">Traditional wax-resist hand-dyed fabric.</p>
+                    <p class="text-red-700 font-bold text-xl mb-4">₹1,299</p>
+                    <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi, I am interested in the Pure Cotton Long Kurti (Design 1)" 
+                       class="block text-center bg-green-600 text-white py-2 rounded font-semibold hover:bg-green-700">
+                       <i class="fab fa-whatsapp mr-2"></i>Buy via WhatsApp
+                    </a>
+                </div>
+            </div>
 
-<div class="gallery">
+            </div>
+    </section>
 
-<div class="card">
-<img src="https://via.placeholder.com/400x500">
-<div class="info">
-<h4>Pure Batik Saree</h4>
-<p>Hand-dyed premium saree</p>
-<p class="price">₹4,999</p>
-<a class="order-btn" href="https://wa.me/91XXXXXXXXXX?text=I want to order Pure Batik Saree" target="_blank">Order on WhatsApp</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/400x500">
-<div class="info">
-<h4>Batik Cotton Fabric</h4>
-<p>Premium quality cotton</p>
-<p class="price">₹1,499</p>
-<a class="order-btn" href="https://wa.me/91XXXXXXXXXX?text=I want to order Batik Cotton Fabric" target="_blank">Order on WhatsApp</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/400x500">
-<div class="info">
-<h4>Batik Dupatta</h4>
-<p>Traditional elegant patterns</p>
-<p class="price">₹999</p>
-<a class="order-btn" href="https://wa.me/91XXXXXXXXXX?text=I want to order Batik Dupatta" target="_blank">Order on WhatsApp</a>
-</div>
-</div>
-
-</div>
-</section>
-
-<section class="section">
-<h3>How to Order</h3>
-
-<div class="steps">
-<div class="step">📸 Choose your product</div>
-<div class="step">💬 Click WhatsApp order</div>
-<div class="step">📦 Confirm & delivery</div>
-</div>
-</section>
-
-<section class="section instagram">
-<h3>Follow Us on Instagram</h3>
-<p>@3sbatikgallery</p>
-<a class="btn" href="https://instagram.com" target="_blank">View Instagram</a>
-</section>
-
-<footer>
-<p>© 2026 3s Batik Gallery | Handcrafted with Love</p>
-</footer>
-
-<a class="whatsapp-float" href="https://wa.me/91XXXXXXXXXX" target="_blank">
-WhatsApp Us
-</a>
+    <footer id="contact" class="bg-gray-900 text-white py-12 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-6">Connect with 3S Batik Gallery</h3>
+            <div class="flex justify-center space-x-8 mb-8">
+                <a href="https://instagram.com/YOUR_HANDLE" class="text-3xl hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/YOUR_PAGE" class="text-3xl hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/YOUR_PHONE_NUMBER" class="text-3xl hover:text-green-500"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="text-gray-400">© 2024 3S Batik Gallery. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
