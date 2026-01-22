@@ -511,6 +511,22 @@
             </div>
         </div>
     </footer>
+    <script>
+function moveSlide(id, direction) {
+    const slider = document.getElementById(id);
+    const track = slider.querySelector('.slider-track');
+    const total = track.children.length;
+
+    let index = slider.dataset.index ? parseInt(slider.dataset.index) : 0;
+    index += direction;
+
+    if (index < 0) index = total - 1;
+    if (index >= total) index = 0;
+
+    slider.dataset.index = index;
+    track.style.transform = `translateX(-${index * 100}%)`;
+}
+</script>
 </body>
 </html>
 
